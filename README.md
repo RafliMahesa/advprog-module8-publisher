@@ -22,3 +22,7 @@ Lampiran screen show console <br>
 
 Setelah *publisher* di *run*, maka data-data dari *publisher* yang telah di *hard code* akan dikirim ke message queue. Lalu Subscriber akan menerima data tersebut dari message queue dan menampilkan pesan pada lampiran di atas.
 
+Lampiran *monitoring chart based on publisher* <br>
+![Monitoring chart based on publisher](image3.png)<br>
+
+Pada lampiran diatas, terlihat spike yang menandakan bahwa terdapat peningkatan message rates pada waktu tertentu. Hal ini terjadi karena ketika dilakukan *cargo run* pada publisher secara berulang, akan terdapat peningkatan message rate pada RabbitMQ yang merupakan message queue.
