@@ -14,5 +14,11 @@ Maksud dari `amqp://guest:guest@localhost:5672` di program *publisher* yang sama
 
 Ini menunjukkan bahwa keduanya berinteraksi melalui RabbitMQ sebagai titik koordinasi pusat, dimana *publisher* mengirim pesan dan *subscriber* menunggu dan memproses pesan yang diterima. Karena itu, keduanya harus terhubung ke broker yang sama agar komunikasi ini berfungsi dengan efektif.
 
-Lampiran Running RabbitMQ
-![Running RabbitMQ](image.png)
+Lampiran Running RabbitMQ <br>
+![Running RabbitMQ](image.png) <br>
+
+Lampiran screen show console <br>
+![Sending and processing event](image2.png)<br>
+
+Setelah *publisher* di *run*, maka data-data dari *publisher* yang telah di *hard code* akan dikirim ke message queue. Lalu Subscriber akan menerima data tersebut dari message queue dan menampilkan pesan pada lampiran di atas.
+
